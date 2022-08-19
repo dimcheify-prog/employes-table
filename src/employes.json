@@ -1,0 +1,42 @@
+[
+  {
+    "userId": 1,
+    "firstName": "Сергей",
+    "lastName": "Иванов",
+    "surname": "Витальевич",
+    "position": "Монтажист",
+    "address": "Воскресенск"
+  },
+  {
+    "userId": 2,
+    "firstName": "Иван",
+    "lastName": "Скалапендр",
+    "surname": "Иванович",
+    "position": "Колорист",
+    "address": "Луки"
+  },
+  {
+    "userId": 3,
+    "firstName": "Андрей",
+    "lastName": "Васин",
+    "surname": "Сергеевич",
+    "position": "Оператор",
+    "address": "Луховицы"
+  },
+  {
+    "userId": 4,
+    "firstName": "Василий",
+    "lastName": "Кожемяко",
+    "surname": "Веньяминович",
+    "position": "Руководитель",
+    "address": "Киев"
+  },
+  {
+    "userId": 5,
+    "firstName": "Анатолий",
+    "lastName": "Новиков",
+    "surname": "Эдуардович",
+    "position": "Печатник",
+    "address": "Броницы"
+  }
+]
