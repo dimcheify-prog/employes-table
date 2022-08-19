@@ -1,5 +1,5 @@
 $(function () {
-  $('#success-alert').hide();
+  $('#alert').hide();
   $.ajax({
     type: 'GET',
     url: 'employes.json',
@@ -33,6 +33,13 @@ $(function () {
     }
   }
 
+  function showAlert() {
+    $('#alert')
+      .slideDown(200, function() {
+        $('#alert').delay(2000).slideUp(200)
+      })
+  }
+
   $('#create-form').on('submit', function (event) {
     event.preventDefault();
     let data = [];
@@ -43,11 +50,8 @@ $(function () {
     data.push(obj);
     $('tbody>tr:last').after(generateRow(data));
     $('#create-form').trigger('reset');
-    $('#success-alert')
-      .fadeTo(2000, 500)
-      .slideUp(500, function () {
-        $('#success-alert').slideUp(500);
-      });
+    $('#alert h2').html('Сотрудник успешно добавлен')
+    showAlert();
   });
 
   $(document).on('click', '#delete-btn', function (event) {
@@ -90,5 +94,7 @@ $(function () {
     data.push(obj);
     console.log(data);
     $(row).replaceWith(generateRow(data));
+    $('#alert h2').html('Успешно изменено')
+    showAlert();
   });
 });
